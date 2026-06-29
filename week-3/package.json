@@ -1,0 +1,19 @@
+{
+  "name": "polymer-shop-automation",
+  "version": "1.0.0",
+  "description": "Playwright POM Test Automation for Polymer Shop",
+  "scripts": {
+    "test": "playwright test",
+    "test:sanity": "playwright test --grep @sanity",
+    "test:regression": "playwright test --grep @regression",
+    "test:e2e": "playwright test --grep @e2e",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "install:browsers": "playwright install chromium firefox webkit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
